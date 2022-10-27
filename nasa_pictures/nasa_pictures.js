@@ -3,10 +3,10 @@ document.getElementById('valider').addEventListener("click", event => {
     let thumbs = document.getElementById('thumbs-select').value;
 
     let xhr = new XMLHttpRequest();
-    
+
     xhr.onreadystatechange = event => {
-        if(xhr.readyState == 4){
-            if(xhr.status == 200){
+        if (xhr.readyState == 4) {
+            if (xhr.status == 200) {
                 // console.log(xhr.responseText);
                 let reponse = JSON.parse(xhr.responseText);
                 console.log(reponse);
@@ -16,7 +16,7 @@ document.getElementById('valider').addEventListener("click", event => {
                     let img = document.createElement('img');
                     let title = document.createElement('h3');
                     let author = document.createElement('p');
-                    if (reponse[index].media_type == "image"){
+                    if (reponse[index].media_type == "image") {
                         img.src = reponse[index].url;
                     }
                     else if (reponse[index].media_type == "video") {
@@ -30,14 +30,17 @@ document.getElementById('valider').addEventListener("click", event => {
                 }
             }
             else console.log(`Error: ${xhr.status}`);
-        } 
+        }
     };
 
     // un peu triste de ne pas afficher de résultats pour celles.ceux qui n'ont pas bien mis 3 ou true
-    if (count === "3" && thumbs == "true"){
+    if (count === "3" && thumbs == "true") {
         xhr.open("GET", "https://api.nasa.gov/planetary/apod?api_key=3mpbloKSNnuBe6UpTH6LuvEpHLuMstO6NcviGMEj&count=3&thumbs=true");
         xhr.send(null);
         document.getElementById('valider').style.display = "none";
+        setTimeout(() => {
+            return window.location.assign("/index_cube_animation.html");
+        }, 1000);
     }
     else {
         $('#myModal').modal('show');

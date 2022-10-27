@@ -32,11 +32,15 @@ document.getElementById('valider').addEventListener("click", event => {
         let array_request = ["https://api.nasa.gov/planetary/apod?api_key=3mpbloKSNnuBe6UpTH6LuvEpHLuMstO6NcviGMEj&date=2018-06-18",
             "https://api.nasa.gov/planetary/apod?api_key=3mpbloKSNnuBe6UpTH6LuvEpHLuMstO6NcviGMEj&date=2020-09-29",
             "https://api.nasa.gov/planetary/apod?api_key=3mpbloKSNnuBe6UpTH6LuvEpHLuMstO6NcviGMEj&date=2017-05-31"]
-        let random_index = Math.round(Math.random() * (array_request.length-1));
+        let random_index = Math.round(Math.random() * (array_request.length - 1));
         console.log(random_index);
         xhr.open("GET", array_request[random_index]);
         xhr.send(null);
         document.getElementById('valider').style.display = "none";
+        setTimeout(() => {
+            // mettre à jour l'index
+            return window.location.assign("/index_color_picker.html");
+        }, 1000);
     }
     else {
         $('#myModal').modal('show');

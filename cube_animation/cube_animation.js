@@ -27,21 +27,24 @@ document.getElementById("valider").addEventListener("click", (event) => {
       clearInterval(timer);
     } else {
       pos += 1;
-      if (horizontale_value == "right"){
-          box.style.right = pos + "px"; 
+      if (horizontale_value == "right") {
+        box.style.right = pos + "px";
       }
       else {
-        box.style.left = pos + "px"; 
+        box.style.left = pos + "px";
       }
-      if (verticale_value == "top"){
-        box.style.top = pos + "px"; 
+      if (verticale_value == "top") {
+        box.style.top = pos + "px";
       }
-      box.style.bottom = pos + "px"; 
+      box.style.bottom = pos + "px";
     }
   }
 
-  if (horizontale_value === "left" && verticale_value === "bottom"){
+  if (horizontale_value === "left" && verticale_value === "bottom") {
     document.getElementById('valider').style.display = "none";
+    setTimeout(() => {
+      return window.location.assign("/index_nasa_video.html");
+    }, 1000);
   }
   else {
     $('#myModal').modal('show');
