@@ -1,3 +1,9 @@
+let counter = localStorage.getItem("counter");
+console.log(counter);
+let results = JSON.parse(localStorage.getItem("results"));
+
+console.log(results);
+
 document.getElementById('valider').addEventListener("click", event => {
     let api_key = document.getElementById('api_key').value;
 
@@ -26,6 +32,13 @@ document.getElementById('valider').addEventListener("click", event => {
             delay = 45000;
         }
         console.log(delay);
+        
+        console.log(results);
+        results["AI"]++;
+        results["game"]++;
+        localStorage.setItem('results', JSON.stringify(results));
+        counter++;
+        localStorage.setItem('counter', counter)
         setTimeout(() => {
             // mettre à jour l'index
             return window.location.assign("/report_suitsyou/report.html");

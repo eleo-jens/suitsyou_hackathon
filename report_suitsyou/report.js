@@ -3,12 +3,7 @@ import myJson from './report.json' assert {type: 'json'};
 
 // let results_object = JSON.parse(localStorage.getItem("results"));
 
-let results_object = {
-    'web': 6,
-    'wad': 8,
-    'game': 2,
-    'ai': 7
-}
+let results_object = JSON.parse(localStorage.getItem("results"));
 
 let sorted_results = Object.keys(results_object).sort(function(a,b){return results_object[b]-results_object[a]});
 

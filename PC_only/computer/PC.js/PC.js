@@ -59,7 +59,6 @@ function dragDrop() {
         endMessage.style.display = 'block';
         PCpoints = 1;
         results["wad"]++;
-        results["game"]++;
         localStorage.setItem("results", JSON.stringify(results));
         counter++;
         localStorage.setItem("counter", counter);
@@ -141,6 +140,8 @@ const afficheTemps = function(){
 
     time.innerHTML = "timeout!";
     clearInterval(interval);
+    counter++;
+        localStorage.setItem("counter", counter);
     setTimeout( ()=>{
         //     // selectedChoice.parentElement.classList.remove(classToApply);
         //     //quand on a répondu a une question, on en a une nouvelle

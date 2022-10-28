@@ -18,9 +18,9 @@ let currentQuestion = {};
 //pour ajouter un délai : si le user a répondu, on crée un délai avant qu'il puisse répondre à nouveau (voy setTimeOut plus bas)
 let acceptingAnwswers = false;
 
+let score = 0;
 let counter = localStorage.getItem("counter");
 console.log(counter);
-let score = 0;
 let results = JSON.parse(localStorage.getItem("results"));
 
 console.log(results);
