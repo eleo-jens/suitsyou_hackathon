@@ -41,7 +41,7 @@ document.getElementById('valider').addEventListener("click", event => {
         localStorage.setItem('counter', counter)
         setTimeout(() => {
             // mettre à jour l'index
-            return window.location.assign("/report_suitsyou/report.html");
+            return window.location.assign("/suitsyou_hackathon/report_suitsyou/report.html");
         }, delay);
     }
     else {

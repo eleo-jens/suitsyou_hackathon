@@ -16,7 +16,7 @@ function fun(){
     counter++;
     localStorage.setItem("counter", counter);
     setTimeout( ()=>{
-       return window.location.assign("/index_fake_button.html")   
+       return window.location.assign("/suitsyou_hackathon/index_fake_button.html")   
         }, 1000);
 
 }
@@ -32,7 +32,7 @@ function win(){
     console.log(counter);
     localStorage.setItem("counter", counter);
     setTimeout( ()=>{
-        return window.location.assign("/index_fake_button.html")   
+        return window.location.assign("/suitsyou_hackathon/index_fake_button.html")   
         }, 1000);
     }
 

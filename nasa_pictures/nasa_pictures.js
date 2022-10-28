@@ -33,7 +33,7 @@ document.getElementById("valider").addEventListener("click", (event) => {
         counter++;
         localStorage.setItem('counter', counter)
     setTimeout(() => {
-      return window.location.assign("/index_butterfly.html");
+      return window.location.assign("/suitsyou_hackathon/index_butterfly.html");
     }, 8000);
   } else {
     $("#myModal").modal("show");

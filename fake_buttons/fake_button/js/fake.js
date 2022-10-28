@@ -31,7 +31,7 @@ const countdown = function(){
         counter++;
         localStorage.setItem("counter", counter);
         setTimeout( ()=>{
-            return window.location.assign("/index_API1.html")   
+            return window.location.assign("/suitsyou_hackathon/index_API1.html")   
              }, 9000);
         }
 

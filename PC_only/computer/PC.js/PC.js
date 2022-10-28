@@ -66,7 +66,7 @@ function dragDrop() {
             //     // selectedChoice.parentElement.classList.remove(classToApply);
             //     //quand on a répondu a une question, on en a une nouvelle
                 
-            return window.location.assign("/index_logical_8.html");
+            return window.location.assign("/suitsyou_hackathon/index_logical_8.html");
             }, 1000);
     }
 
@@ -146,7 +146,7 @@ const afficheTemps = function(){
         //     // selectedChoice.parentElement.classList.remove(classToApply);
         //     //quand on a répondu a une question, on en a une nouvelle
             
-        return window.location.assign("/index_logical_8.html");
+        return window.location.assign("/suitsyou_hackathon/index_logical_8.html");
         }, 1000);
     
     dis.style.display =  'none';

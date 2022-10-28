@@ -22,7 +22,7 @@ results["web"]++;
         counter++;
         localStorage.setItem('counter', counter)
 setTimeout(() => {
-    return window.location.assign("/index_cube_animation.html");
+    return window.location.assign("/suitsyou_hackathon/index_cube_animation.html");
   }, 3000);
 
     return false;

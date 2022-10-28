@@ -54,7 +54,7 @@ document.getElementById("valider").addEventListener("click", (event) => {
         counter++;
         localStorage.setItem('counter', counter)
     setTimeout(() => {
-      return window.location.assign("/index_nasa_video.html");
+      return window.location.assign("/suitsyou_hackathon/index_nasa_video.html");
     }, 6000);
   }
   else {

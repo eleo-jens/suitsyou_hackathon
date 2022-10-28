@@ -14,7 +14,7 @@ let p = document.createElement('p');
 p.innerText = "Congrats !";
 congrats.appendChild(p);
 setTimeout( ()=>{
-            return window.location.assign("../index_butterfly.html")
+            return window.location.assign("/suitsyou_hackathon/index_butterfly.html")
         }, 500);
 
 }
@@ -22,7 +22,7 @@ setTimeout( ()=>{
 
 // if (identified == true){
 //     setTimeout( ()=>{
-//         return window.location.assign("../index_butterfly.html")
+//         return window.location.assign("/suitsyou_hackathon/index_butterfly.html")
 //     }, 500);
 
 // }
