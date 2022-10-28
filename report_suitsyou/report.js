@@ -21,6 +21,8 @@ const showReport = function(i) {
         url.href = myJson.reports[1].courses[j].url;
         url.innerHTML = `${myJson.reports[i].courses[j].name} @${myJson.reports[i].courses[j].site}`;
         urls.push(url);
+    let a = document.getElementById('download');
+    a.href=`./images/${myJson.reports[i].code}.png`;
     }
 };
 
