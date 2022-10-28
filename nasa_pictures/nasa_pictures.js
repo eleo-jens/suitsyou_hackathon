@@ -1,3 +1,12 @@
+let counter = localStorage.getItem("counter");
+console.log(counter);
+let results = JSON.parse(localStorage.getItem("results"));
+
+console.log(results);
+
+
+
+
 document.getElementById("valider").addEventListener("click", (event) => {
   let count = document.getElementById("count").value;
   let thumbs = document.getElementById("thumbs-select").value;
@@ -16,6 +25,12 @@ document.getElementById("valider").addEventListener("click", (event) => {
     // point d'amélioration: faire un removeEventListener
     document.getElementById("valider").style.display = "none";
     // permet le passage après un certain délai à la page index qui va lancer le prochain jeu
+    
+        console.log(results);
+        results["web"]++;
+        localStorage.setItem('results', JSON.stringify(results));
+        counter++;
+        localStorage.setItem('counter', counter)
     setTimeout(() => {
       return window.location.assign("/index_cube_animation.html");
     }, 8000);

@@ -1,3 +1,9 @@
+let counter = localStorage.getItem("counter");
+console.log(counter);
+let results = JSON.parse(localStorage.getItem("results"));
+
+console.log(results);
+
 let timer = setInterval(move, 10);
 let pos = 0;
 let ball = document.getElementById("ball");
@@ -42,6 +48,11 @@ document.getElementById("valider").addEventListener("click", (event) => {
 
   if (horizontale_value === "left" && verticale_value === "bottom") {
     document.getElementById('valider').style.display = "none";
+    console.log(results);
+        results["game"]++;
+        localStorage.setItem('results', JSON.stringify(results));
+        counter++;
+        localStorage.setItem('counter', counter)
     setTimeout(() => {
       return window.location.assign("/index_nasa_video.html");
     }, 6000);
