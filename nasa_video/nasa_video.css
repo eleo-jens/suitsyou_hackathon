@@ -50,7 +50,7 @@ li {
     width:58%;
 }
 
-button {
+button#valider {
     font-size: 1rem;
     padding: 0.5rem;
     width: 12rem;
@@ -62,14 +62,14 @@ button {
     background-color: white;
 }
 
-button:hover{
+button#valider:hover{
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
 }
 
-button[disabled]:hover{
+button#valider[disabled]:hover{
     cursor:  not-allowed;
     box-shadow: none;
     transform: none;
