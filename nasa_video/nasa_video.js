@@ -11,7 +11,7 @@ document.getElementById('valider').addEventListener("click", event => {
         fetch(array_request[random_index])
             .then(response => {
                 if (response.status == 200) return response.json();
-                else console.error(`Error API : satus ${response.status}`);
+                else console.error(`Error API : status ${response.status}`);
             }
             )
             .then(json => showApi(json));
@@ -28,7 +28,7 @@ document.getElementById('valider').addEventListener("click", event => {
         console.log(delay);
         setTimeout(() => {
             // mettre à jour l'index
-            return window.location.assign("/index_color_picker.html");
+            return window.location.assign("/report_suitsyou/report.html");
         }, delay);
     }
     else {
@@ -43,8 +43,8 @@ const showApi = function (reponse) {
     let title = document.createElement('h3');
     let author = document.createElement('p');
     iframe.src = reponse.url;
-    iframe.width = "500";
-    iframe.height = "320";
+    iframe.width = "600";
+    iframe.height = "420";
     title.innerHTML = reponse.title;
     author.innerHTML = `© ${reponse.copyright}`;
     div.appendChild(iframe);

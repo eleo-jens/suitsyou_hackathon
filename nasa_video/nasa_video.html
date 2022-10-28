@@ -7,31 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href=".../style.css">
+    <link rel="stylesheet" href="./nasa_video.css">
     <title>Document</title>
 </head>
 
 <body>
     <!-- Notre API Key de la NASA pour avoir droit à 1000 requête par heure par adresse IP
     3mpbloKSNnuBe6UpTH6LuvEpHLuMstO6NcviGMEj -->
-    <div id="question_video">
-        <p>Vous allez réutliser l'<a href="https://api.nasa.gov/" target="_blank">API de la NASA</a>. Cette fois pour
-            découvrir l'espace en vidéo.</p>
+    <div id="container">
+        <div id="question_video">
+            <p>Vous allez réutliser l'<a href="https://api.nasa.gov/" target="_blank">API de la NASA</a>. Cette fois pour
+                découvrir l'espace en vidéo.</p>
 
-        <p>Afin de faire appel à l'API, il faut indiquer une clé d'utilisation dans l'url, une <code>api_key</code></p>
-        <ul>
-            <li>Notre <code>api_key</code> est <code>DEMO_KEY</code></li>
-            <li>Tapez donc <code>DEMO_KEY</code> pour voir ce qu'il se passe !</li>
-        </ul>
+            <p>Afin de faire appel à l'API, il faut indiquer une clé d'utilisation dans l'url, une <code>api_key</code></p>
+            <ul>
+                <li>Notre <code>api_key</code> est <code>DEMO_KEY</code></li>
+                <li>Tapez donc <code>DEMO_KEY</code> pour voir ce qu'il se passe !</li>
+            </ul>
 
-        <form>
-            <p><code>https://api.nasa.gov/planetary/apod?api_key=</code>
-                <input type="text" id="api_key">
-            </p>
-            <!-- voir pour désactiver l'envoi du formulaire car on travaille avec JS -->
-            <p id="valider">Valider</p>
-        </form>
+            <form>
+                <p><code>https://api.nasa.gov/planetary/apod?api_key=</code>
+                    <input type="text" id="api_key">
+                </p>
+                <!-- voir pour désactiver l'envoi du formulaire car on travaille avec JS -->
+            </form>
+            <button id="valider">Valider</button>
+        </div>
+        <div id="resultat"></div>
     </div>
-    <div id="resultat"></div>
     <div class="modal" tabindex="-1" role="dialog" id="myModal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">

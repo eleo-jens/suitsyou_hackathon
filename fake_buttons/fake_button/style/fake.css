@@ -1,0 +1,32 @@
+
+
+#img{
+  display: none;
+  margin: auto;
+  margin-right: auto;
+   width: 40%;
+    
+}
+
+#q{
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+#options{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  text-align: center;
+}
+
+
+#b{
+    box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+}

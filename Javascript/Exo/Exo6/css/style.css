@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
+h1 {
+    font-family: 'Source Code Pro', monospace;
+}
+
+table td {
+    border: 2px solid black;
+}
+
+div {
+    width: 50px;
+    height: 50px;
+}
+
+/* tr>td:last-child>div {
+    width: 100px;
+} */
+
+div.window {
+    width: 100px;
+}

@@ -1,0 +1,76 @@
+#pic{
+    margin: auto;
+    width: 50%;
+   /*border: 3px solid rgb(107, 118, 138);  */
+    padding: 5px;
+    text-align: center;
+}
+
+
+.container {
+    overflow: hidden;
+    width: 800px;
+    margin: auto;
+    margin-right: 30%;
+    display: block;
+   
+    
+  }
+
+  .b {
+      float: left;
+	  color: black;
+	  text-align: center;
+	  padding: 7px 7px;
+	  text-decoration: none;
+	  font-size: 20px;
+      border: 1px solid black;
+      display: block;
+      cursor: pointer;
+      box-shadow: 3px 4px 0px 0px #899599;
+	  background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	  background-color:#ededed;
+	  border-radius:15px;
+	  border:1px solid #d6bcd6;
+
+
+
+
+
+
+  }
+
+
+  .b:hover {
+    background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+    font-size: 90%;
+  }
+
+
+
+  #exp{
+    margin: auto;
+    width: 50%;
+    padding: 5px;
+    text-align: center;
+  }
+
+
+  
+
+
+
+  #congrats{
+    display: none;
+    margin: 100px auto;
+    width: 50%;
+    padding: 5px;
+    text-align: center;
+    font-size: 50px;
+   /* border: 3px solid #1f1064;  */
+    
+    
+    
+  }
+

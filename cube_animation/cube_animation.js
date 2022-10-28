@@ -1,16 +1,16 @@
 let timer = setInterval(move, 10);
 let pos = 0;
-let box = document.getElementById("box");
+let ball = document.getElementById("ball");
 
 function move() {
-  if (pos >= 150) {
-    // the box reached the end of the container (because 200px-50px = 150px)
+  if (pos >= 270) {
+    // the ball reached the end of the container (because 200px-50px = 150px)
     clearInterval(timer);
   } else {
     pos += 1;
     // right, bottom, left, top
-    box.style.right = pos + "px"; // déplace la boite par la gauche, son coté gauche change de position
-    box.style.top = pos + "px"; // déplace la boite par le haut, son coté haut change de position
+    ball.style.right = pos + "px"; // déplace la boite par la gauche, son coté gauche change de position
+    ball.style.top = pos + "px"; // déplace la boite par le haut, son coté haut change de position
   }
 }
 
@@ -20,23 +20,23 @@ document.getElementById("valider").addEventListener("click", (event) => {
 
   let timer = setInterval(move, 10);
   let pos = 0;
-  let box = document.getElementById("box");
+  let ball = document.getElementById("ball");
 
   function move() {
-    if (pos >= 150) {
+    if (pos >= 270) {
       clearInterval(timer);
     } else {
       pos += 1;
       if (horizontale_value == "right") {
-        box.style.right = pos + "px";
+        ball.style.right = pos + "px";
       }
       else {
-        box.style.left = pos + "px";
+        ball.style.left = pos + "px";
       }
       if (verticale_value == "top") {
-        box.style.top = pos + "px";
+        ball.style.top = pos + "px";
       }
-      box.style.bottom = pos + "px";
+      ball.style.bottom = pos + "px";
     }
   }
 
@@ -44,7 +44,7 @@ document.getElementById("valider").addEventListener("click", (event) => {
     document.getElementById('valider').style.display = "none";
     setTimeout(() => {
       return window.location.assign("/index_nasa_video.html");
-    }, 1000);
+    }, 6000);
   }
   else {
     $('#myModal').modal('show');

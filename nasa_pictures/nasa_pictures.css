@@ -1,0 +1,51 @@
+/* div#question_picture{
+    float: left; 
+    width: 50%;
+    margin-right: 10%;
+} */
+
+body {
+    background-color: #264653
+}
+
+p {
+    color: white;
+}
+
+code, a {
+    color: #E76F51;
+}
+
+li {
+    color: white;
+}
+
+div#resultat{
+    display: table;
+    /* float: left; */
+    /* width: 40%; */
+}
+
+div#container {
+    padding: 2%;
+    width: 90%;
+    margin: auto;
+    display: table;
+    clear: both;
+}
+
+div#resultat>div{
+    width: 32%;
+    margin-right: 1%;
+    float:left;
+
+}
+
+div#resultat>div>img{
+    width: 100%;
+    
+}
+
+#valider {
+    cursor: pointer;
+}

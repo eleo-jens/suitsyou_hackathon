@@ -12,41 +12,43 @@
 </head>
 
 <body>
-    <div id="question_animationJS">
-        <p>This is a simple animation : the purple box is moving inside the green box.</p>
-        <p>Each 10 milliseconds the position of the purple box is moving little by little.</p>
-        <p>We want the small purple box to move from the left bottom corner to the right bottom corner.</p>
-        <p>Don't be scared ! Give it a try ;)</p>
-
-        <pre><code>
-        let timer = setInterval(move, 10)
-        let pos = 0;
-        let box = document.getElementById("box");
-            
-        function move () {
-            if (pos >= 150)
-            {
-                clearInterval(timer);
-            }
-            else {
-                pos += 1;
-                box.style.<select name = "position1" id="position1-select">
-                    <option value = "">-- options --</option>
-                    <option value="right">right</option>
-                    <option value="left">left</option>
-                </select> = pos+"px";
-                box.style.<select name = "position2" id="position2-select">
-                    <option value = "">-- options --</option>
-                    <option value="top">top</option>
-                    <option value="bottom">bottom</option>
-                </select> = pos+"px";
-            }
-        }
-        </code></pre>
-        <p id="valider">Valider</p>
-    </div>
     <div id="container">
-        <div id="box"></div>
+        <div id="question_animationJS">
+            <p>This is a simple animation : the purple ball is moving inside the green box.</p>
+            <p>Each 10 milliseconds the position of the ball is moving little by little.</p>
+            <p>We want the small purple ball to move from the left bottom corner to the right bottom corner.</p>
+            <p>Don't be scared ! Give it a try ;)</p>
+
+            <pre><code>
+            let timer = setInterval(move, 10)
+            let pos = 0;
+            let ball = document.getElementById("ball");
+                
+            function move () {
+                if (pos >= 270)
+                {
+                    clearInterval(timer);
+                }
+                else {
+                    pos += 1;
+                    ball.style.<select name = "position1" id="position1-select">
+                        <option value = "">-- options --</option>
+                        <option value="right">right</option>
+                        <option value="left">left</option>
+                    </select> = pos+"px";
+                    ball.style.<select name = "position2" id="position2-select">
+                        <option value = "">-- options --</option>
+                        <option value="top">top</option>
+                        <option value="bottom">bottom</option>
+                    </select> = pos+"px";
+                }
+            }
+            </code></pre>
+            <button id="valider">Valider</button>
+        </div>
+        <div id="box">
+            <div id="ball"></div>
+        </div>
     </div>
     <div class="modal" tabindex="-1" role="dialog" id="myModal">
         <div class="modal-dialog" role="document">
