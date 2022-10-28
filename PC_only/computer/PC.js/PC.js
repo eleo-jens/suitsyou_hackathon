@@ -140,6 +140,8 @@ const afficheTemps = function(){
 
     time.innerHTML = "timeout!";
     clearInterval(interval);
+    counter++;
+        localStorage.setItem("counter", counter);
     setTimeout( ()=>{
         //     // selectedChoice.parentElement.classList.remove(classToApply);
         //     //quand on a répondu a une question, on en a une nouvelle
