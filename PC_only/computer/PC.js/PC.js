@@ -59,7 +59,6 @@ function dragDrop() {
         endMessage.style.display = 'block';
         PCpoints = 1;
         results["wad"]++;
-        results["game"]++;
         localStorage.setItem("results", JSON.stringify(results));
         counter++;
         localStorage.setItem("counter", counter);

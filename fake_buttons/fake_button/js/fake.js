@@ -32,7 +32,7 @@ const countdown = function(){
         localStorage.setItem("counter", counter);
         setTimeout( ()=>{
             return window.location.assign("/index_API1.html")   
-             }, 5000);
+             }, 9000);
         }
 
         }    

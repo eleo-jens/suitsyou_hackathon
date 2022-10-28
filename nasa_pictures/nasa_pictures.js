@@ -28,11 +28,12 @@ document.getElementById("valider").addEventListener("click", (event) => {
     
         console.log(results);
         results["web"]++;
+        results["AI"]++;
         localStorage.setItem('results', JSON.stringify(results));
         counter++;
         localStorage.setItem('counter', counter)
     setTimeout(() => {
-      return window.location.assign("/index_cube_animation.html");
+      return window.location.assign("/index_butterfly.html");
     }, 8000);
   } else {
     $("#myModal").modal("show");

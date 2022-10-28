@@ -35,6 +35,7 @@ document.getElementById('valider').addEventListener("click", event => {
         
         console.log(results);
         results["AI"]++;
+        results["game"]++;
         localStorage.setItem('results', JSON.stringify(results));
         counter++;
         localStorage.setItem('counter', counter)
