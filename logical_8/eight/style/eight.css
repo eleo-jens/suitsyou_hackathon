@@ -1,76 +1,111 @@
-#pic{
-    margin: auto;
-    width: 50%;
-   /*border: 3px solid rgb(107, 118, 138);  */
-    padding: 5px;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:wght@500&display=swap');
+
+body {
+  background-color: #264653;
+  font-family: 'Lato', "Helvetica Neue", Helvetica, sans-serif;
+}
+
+h1#exp {
+  color: rgb(244, 162, 97);
+  font-size: 2rem;
+  margin-top: 2%;
+}
+
+#global {
+  margin: auto;
+  margin-top: 2%;
+
+}
+
+div.container {
+  text-align: center;
+  padding: 2%;
+  margin-left: 20%;
+  padding-left: 10%;
+}
+
+#pic {
+  margin-top: 2%;
+  margin: auto;
+  width: 50%;
+  /*border: 3px solid rgb(107, 118, 138);  */
+  padding: 5px;
+  text-align: center;
+}
+
+img {
+  margin-top: 2%;
 }
 
 
 .container {
-    overflow: hidden;
-    width: 800px;
-    margin: auto;
-    margin-right: 30%;
-    display: block;
-   
-    
-  }
-
-  .b {
-      float: left;
-	  color: black;
-	  text-align: center;
-	  padding: 7px 7px;
-	  text-decoration: none;
-	  font-size: 20px;
-      border: 1px solid black;
-      display: block;
-      cursor: pointer;
-      box-shadow: 3px 4px 0px 0px #899599;
-	  background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
-	  background-color:#ededed;
-	  border-radius:15px;
-	  border:1px solid #d6bcd6;
+  overflow: hidden;
+  width: 800px;
+  margin: auto;
+  margin-right: 30%;
+  display: block;
 
 
+}
 
-
-
-
-  }
-
-
-  .b:hover {
-    background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
-	background-color:#bab1ba;
-    font-size: 90%;
-  }
+.b {
+  margin-left: 0.5%;
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 7px 7px;
+  text-decoration: none;
+  font-size: 20px;
+  /* border: 1px solid black; */
+  display: block;
+  cursor: pointer;
+  /* box-shadow: 3px 4px 0px 0px #899599; */
+  /* background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%); */
+  /* background-color:#ededed; */
+  background-color: rgb(42, 157, 143);
+  border-radius: 15px;
+  /* border:1px solid #d6bcd6; */
 
 
 
-  #exp{
-    margin: auto;
-    width: 50%;
-    padding: 5px;
-    text-align: center;
-  }
-
-
-  
 
 
 
-  #congrats{
-    display: none;
-    margin: 100px auto;
-    width: 50%;
-    padding: 5px;
-    text-align: center;
-    font-size: 50px;
-   /* border: 3px solid #1f1064;  */
-    
-    
-    
-  }
+}
 
+
+.b:hover {
+  /* background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%); */
+  background-color: rgb(244, 162, 97);
+  color: #264653
+    /* background-color:#bab1ba; */
+    /* font-size: 90%; */
+}
+
+
+
+#exp {
+  margin: auto;
+  width: 50%;
+  padding: 5px;
+  text-align: center;
+}
+
+
+
+
+
+
+#congrats {
+  display: none;
+  margin: 100px auto;
+  width: 50%;
+  padding: 5px;
+  text-align: center;
+  font-size: 50px;
+  color: rgb(244, 162, 97);
+  /* border: 3px solid #1f1064;  */
+
+
+
+}

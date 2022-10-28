@@ -56,10 +56,10 @@ const myChart = new Chart(chart, {
             label: 'Your Carrer Path',
             data: [results_object.web, results_object.wad, results_object.game, results_object.ai],
             backgroundColor: [
-                'rgb(255, 99, 132)',
-                'rgb(54, 162, 235)',
-                'rgb(255, 205, 86)',
-                'rgb(0, 205, 86)'
+                'rgb(42, 157, 143)',
+                'rgb(244, 162, 97)',
+                'rgb(233, 196, 106',
+                'rgb(231, 111, 81)'
             ],
             hoverOffset: 4
         }]

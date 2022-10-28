@@ -1,3 +1,33 @@
+body {
+    background-color: #264653;
+    font-family: 'Lato', Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #F4A261;
+    font-size: 4rem;
+    margin-top: 0;
+}
+
+p {
+    color: white;
+}
+
+a {
+    color: #E76F51;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F4A261;
+}
+
+ul li {
+    list-style-type: none;
+}
+
 div#result{
     float: left;
     width: 60%;
@@ -15,4 +45,31 @@ div#report_container {
     margin: auto;
     display: table;
     clear: both;
+}
+
+button {
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 12rem;
+    text-align: center;
+    border: 0.1rem solid #2A9D8F;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #264653;
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 70%;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+button[disabled]:hover{
+    cursor:  not-allowed;
+    box-shadow: none;
+    transform: none;
 }
