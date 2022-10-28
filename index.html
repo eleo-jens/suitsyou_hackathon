@@ -4,16 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quizz</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>quiz</title>
+
 </head>
 <body>
-    <div class="container">
-        <div id="home" class="flex-center flex-column">
-            <h1>Quiz</h1>
-            <a class="btn" href="personnality/personality.html">Play</a>
-            <!-- <a class="btn" href="highscore.html">High Scores</a> -->
-        </div>
-    </div>
+    <header>
+        <nav class="navbar">
+            <a href="./index.html" class="nav-branding"><img src="./images/logo (1).svg" alt="logo"></a>
+            
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                <a href="#" class="nav-link"> 
+                    <h2>&#129300 SuITs You ! What is it about ?</h2>
+                    <p>We have designed for you a top notch revolutionary IT orientation test &#129504 </p>
+                    <p>Is the programming field done for you ? </p>
+                    <p>You would be better suited as a Data Analyst or as a Front End Developer ? </p>
+                    <p>We will be able to guide you through all those carrer paths and provide you with insightful tips and documentations. </p>
+                    <br>
+                    <h2>Don't wait up. Play the test ! Dicover your future dream job. </h2>
+                    <p>This game is provided to you by: </p> <br>
+
+                    <div id="lien">
+                    <p><a href="https://github.com/eleo-jens/" target="_blank">	&#128126 Eléonore</a> </p>
+                    <p><a href="https://github.com/katadjina" target="_blank">	&#128126 Kasia</a> </p> 
+                    <p><a href="https://github.com/MayaOria" target="_blank">	&#128126 Maya</a> </p> 
+                    <p><a href="https://github.com/NASRAvictoria"  target="_blank">	&#128126 Victoria</a></p>
+                </div>
+                    <h4> &#129395 We coded that wonderful quiz during a 3 day <a href="https://www.interface3.be/" target="_blank">Interface3</a> hackathon.</h4>
+                       <br>
+                       <br>
+                       <br>
+                </p>
+                    
+                </a>
+                <li>
+                                                                    
+            </ul>
+
+
+            <div class="hamburger">
+                <span class="bar" ></span>
+                <span class="bar" ></span>   
+                <span class="bar" ></span>  
+                
+            </div>
+            
+        </nav>
+
+    </header>
+
+<div id="rules">
+<h1 id="rule" > QUIZ RULES </h1>
+<p class="rule" > 1. Try to answer question HONESTLY! </p>
+<p class="rule" > 2. It takes approximetly 15 minutes </p>
+<p class="rule" > 3. Quiz contains questions, mini games and demos</p>
+<p class="rule" > 3. Have fun! </p>
+
+
+<div>
+
+<button id="buttonPLAY" onclick="window.location.href='personnality/personality.html'"> QUIZ </button>
+
+    
+
+
+
+    <script type="text/javascript">
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+        
+        hamburger.addEventListener("click", () =>{
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+        
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () =>{
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }))
+        
+
+    </script>
+   
 </body>
 </html>

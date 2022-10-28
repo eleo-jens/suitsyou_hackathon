@@ -3,6 +3,10 @@ body {
     font-family: 'Lato', Helvetica, sans-serif;
 }
 
+a img {
+    width: 5%;
+}
+
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -40,7 +44,7 @@ div#graph{
 }
 
 div#report_container {
-    padding: 12%;
+    padding: 6%;
     width: 70%;
     margin: auto;
     display: table;
